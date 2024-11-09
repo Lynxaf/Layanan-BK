@@ -1,0 +1,276 @@
+/* Header Styles */
+header {
+    background-color:#133E87;
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    animation: fadeInDown 1s ease;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #ddd;
+    max-width: 700px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    animation: fadeInUp 1.2s ease;
+}
+
+/* Keyframes for fade-in animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Button Style for Header */
+header .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+    border-radius: 30px;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 1.5s ease;
+}
+
+header .btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Adding Parallax Effect */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+header h1, header p, header .btn-primary {
+    position: relative;
+    z-index: 2;
+}
+
+/* Horizontal Navbar */
+.horizontal-navbar {
+    background-color: #133E87;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.horizontal-navbar .navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.horizontal-navbar .nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.horizontal-navbar .nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 0.5rem;
+}
+
+.horizontal-navbar .nav-link:hover,
+.horizontal-navbar .nav-link.active {
+    color: #ffde59;
+    border-bottom: 2px solid #ffde59;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .horizontal-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+}
+
+/* Services Section Styling */
+/* Menambahkan Flexbox pada container */
+.card-container {
+    display: flex;
+    justify-content: center; /* Menjajarkan card secara horizontal di tengah */
+    gap: 2rem; /* Memberikan jarak antar card */
+    flex-wrap: wrap; /* Agar card bisa melingkar jika layarnya kecil */
+    margin: 20px 0; /* Memberikan margin di atas dan bawah */
+}
+
+/* Styling untuk setiap card */
+.card {
+    max-width: 18rem; /* Membatasi lebar card */
+    margin-bottom: 1rem; /* Memberikan jarak bawah antar card */
+}
+
+/* Responsif: jika layar kecil, card akan ditampilkan dalam satu kolom */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column; /* Membuat card tampil satu per satu secara vertikal pada layar kecil */
+        align-items: center; /* Menjajarkan card ke tengah */
+    }
+}
+
+
+/* About Section Styling */
+#about {
+    padding: 5rem 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+#about h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #007bff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#service {
+    padding: 5rem 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#service h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #007bff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+#service h2 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+/* style.css */
+.blog-section {
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+  
+  h2 {
+    text-align: center;
+  }
+  
+  ul, ol {
+    padding-left: 20px;
+  }
+  
+  blockquote {
+    background-color: #f9f9f9;
+    border-left: 5px solid #ccc;
+    padding: 10px;
+    margin: 20px 0;
+  }
+
+ /* .cord-section{
+    margin: 20px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: auto;
+} */
+
+#carouselExampleIndicators .carousel-inner img {
+    height: 50%; /* Atur menjadi lebih kecil sesuai kebutuhan */
+    object-fit: cover;
+}
+
+.testimoni{
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+}
+.testimoni .card{
+    margin: 10px;
+}
