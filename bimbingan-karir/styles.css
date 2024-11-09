@@ -266,11 +266,12 @@ header h1, header p, header .btn-primary {
     object-fit: cover;
 }
 
-.testimoni{
-    display: flex;
+.testimoni .container {
     padding: 20px;
-    margin: 10px;
 }
-.testimoni .card{
-    margin: 10px;
+
+.testimoni .card {
+    max-width: 100%; /* Memastikan card mengambil lebar penuh pada layar kecil */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
