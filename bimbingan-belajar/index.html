@@ -10,18 +10,32 @@
 </head>
 <body>
   <header>
-    <nav>
-      <div class="logo">
-        <h3>Bimbingan Belajar</h3>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#home" style="color: white;">Bimbingan Belajar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home" style="color: white;">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services" style="color: white;">Layanan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials" style="color: white;">Testimoni</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" style="color: white;">Kontak</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <ul class="nav-links">
-        <li><a href="#home">Beranda</a></li>
-        <li><a href="#services">Layanan</a></li>
-        <li><a href="#testimonials">Testimoni</a></li>
-        <li><a href="#contact">Kontak</a></li>
-      </ul>
     </nav>
   </header>
+  
 
   <!-- Hero Section -->
   <section id="home" class="hero">
@@ -96,27 +110,50 @@
 </div>
 <br><br>
   <!-- Testimonials Section -->
-  <section id="testimonials" class="testimonials">
-    <h2>Apa Kata Mereka?</h2>
-    <div class="testimonial-cards">
-      <div class="card">
-        <p>"Bimbingan yang sangat membantu dalam memahami pelajaran. Pengajarnya sabar dan sangat berkompeten!"</p>
-        <h4>- Arif Pratama, Siswa Kelas 11</h4>
-      </div>
-      <div class="card">
-        <p>"Bimbingan ini sangat membantu saya dalam mengatur waktu belajar dan memahami materi dengan lebih baik. Sekarang saya lebih fokus dan terorganisir."</p>
-        <h4>- Rani Setiawan, Siswa Kelas 12</h4>
-      </div>
-      <div class="card">
-        <p>"Tutor yang ramah dan cara mengajarnya yang menyenangkan membuat belajar jadi tidak terasa membosankan. Saya jadi lebih termotivasi untuk belajar!"</p>
-        <h4>- Citra Amelia, Siswa Kelas 10</h4>
-      </div>
-      <div class="card">
-        <p>"Program ini membantu saya memahami konsep sulit dengan cara yang mudah dipahami. Saya sangat puas dengan bimbingan ini!."</p>
-        <h4>- Dewi Lestari, Siswa Kelas 12</h4>
+  <section id="testimonials" class="testimonials py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Apa Kata Mereka?</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card h-100 p-3">
+            <p>"Bimbingan yang sangat membantu dalam memahami pelajaran. Pengajarnya sabar dan sangat berkompeten!"</p>
+            <h4>- Arif Pratama, Siswa Kelas 11</h4>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 p-3">
+            <p>"Bimbingan ini sangat membantu saya dalam mengatur waktu belajar dan memahami materi dengan lebih baik. Sekarang saya lebih fokus dan terorganisir."</p>
+            <h4>- Rani Setiawan, Siswa Kelas 12</h4>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 p-3">
+            <p>"Tutor yang ramah dan cara mengajarnya yang menyenangkan membuat belajar jadi tidak terasa membosankan. Saya jadi lebih termotivasi untuk belajar!"</p>
+            <h4>- Citra Amelia, Siswa Kelas 10</h4>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 p-3">
+            <p>"Program ini membantu saya memahami konsep sulit dengan cara yang mudah dipahami. Saya sangat puas dengan bimbingan ini!"</p>
+            <h4>- Dewi Lestari, Siswa Kelas 12</h4>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 p-3">
+            <p>"Dengan bantuan tutor yang berpengalaman, saya merasa lebih percaya diri menghadapi ujian. Sangat bermanfaat!"</p>
+            <h4>- Rizky Maulana, Siswa Kelas 11</h4>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 p-3">
+            <p>"Bimbingan ini sangat profesional dan fokus pada kebutuhan siswa. Saya sangat merekomendasikannya!"</p>
+            <h4>- Liana Putri, Siswa Kelas 12</h4>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+  
 <!-- Blog Section -->
 <section id="blog" class="blog">
   <h2>Blog</h2>
